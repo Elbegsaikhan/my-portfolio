@@ -4,13 +4,16 @@ import Footer from '@/components/Include/Footer';
 
 function index({ children }) {
   return (
-    <main className="flex h-screen flex-col items-start justify-between">
-      {/* <Header /> */}
-      <div>{children}</div>
-      <div data-aos="fade-up">
-        <Footer />
-      </div>
-    </main>
+    <>
+      <div className="noise"></div>
+      <main className=" h-screen   ">
+        {/* <Header /> */}
+        <div className="w-full ">{children}</div>
+        <div data-aos="fade-up" className="fixed bottom-0 left-0  ">
+          <Footer />
+        </div>
+      </main>
+    </>
   );
 }
 

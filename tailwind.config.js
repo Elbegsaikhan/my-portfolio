@@ -15,6 +15,9 @@ module.exports = {
       transitionTimingFunction: {
         'letter-expo': 'cubic-bezier(.075,.82,.165,1)',
       },
+      backgroundImage: {
+        noise: "url('/noise-transparent.png')",
+      },
     },
   },
   plugins: [],
