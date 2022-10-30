@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'hkgrotesk-semibold';
+  src: local(''), url('/fonts/hkgrotesk-semibold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'hkgrotesk-regular';
+  src: local(''), url('/fonts/hkgrotesk-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'hkgrotesk-medium';
+  src: local(''), url('/fonts/hkgrotesk-medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'hkgrotesk-bold';
+  src: local(''), url('/fonts/hkgrotesk-bold.woff') format('woff');
+}
+/* 
+@font-face {
+  font-family: 'MyFont';
+  font-style: bold;
+  font-weight: 600;
+  src: local(''), url('/fonts/MY-FONT-BOLD.woff') format('woff');
+} */
