@@ -13,6 +13,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="TypeScript JSX File" />
       </list>
     </option>
@@ -38,7 +39,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/elbegsaikhanamgalan/Developer/Next.js/elbegsaikhan_portfolio/public/fonts",
+    "last_opened_file_path": "/Users/elbegsaikhanamgalan/Developer/Next.js/elbegsaikhan_portfolio/src/app",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -52,6 +53,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app" />
       <recent name="$PROJECT_DIR$/public/fonts" />
     </key>
   </component>
@@ -96,6 +98,7 @@
       <workItem from="1680265309579" duration="235000" />
       <workItem from="1680265571744" duration="12000" />
       <workItem from="1680265603243" duration="5318000" />
+      <workItem from="1680270958655" duration="1040000" />
     </task>
     <servers />
   </component>
