@@ -1,24 +1,27 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
+    "./src/app/**/*.{ts,tsx}",
+    "./src/components/**/*.{ts,tsx}",
+    "./src/content/**/*.mdx",
   ],
   theme: {
     extend: {
       fontFamily: {
-        hkgroteskSemi: ['hkgrotesk-semibold'],
-        hkgroteskRegular: ['hkgrotesk-regular'],
-        hkgroteskMedium: ['hkgrotesk-medium'],
-        hkgroteskBold: ['hkgrotesk-bold'],
+        serif: ["var(--font-kaisei)"],
       },
-      transitionTimingFunction: {
-        'letter-expo': 'cubic-bezier(.075,.82,.165,1)',
-      },
-      backgroundImage: {
-        noise: "url('/noise-transparent.png')",
+      typography: {
+        quoteless: {
+          css: {
+            "blockquote p:first-of-type::before": { content: "none" },
+            "blockquote p:first-of-type::after": { content: "none" },
+          },
+        },
       },
     },
   },
-  plugins: [],
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
+  plugins: [require("@tailwindcss/typography")],
 };
