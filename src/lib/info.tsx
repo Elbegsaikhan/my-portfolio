@@ -1,13 +1,10 @@
 import me from "../app/avatar.jpg";
 
-export const name = "Elbegsaikhan Amgalan";
+export const name = "Elbegsaikhan";
 export const avatar = me;
 export const about = () => {
   return (
-    <>
-      Hey, I'm a developer who loves Next.js. I work at M Bank as a Software
-      Engineer.
-    </>
+    <>Started coding for 2 years, still much things to learn in this field :)</>
   );
 };
 export const bio = () => {

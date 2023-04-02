@@ -7,16 +7,16 @@ import { LayoutGroup, motion } from "framer-motion";
 
 const navItems = {
   "/": {
-    name: "home",
+    name: "/",
   },
   "/about": {
-    name: "about",
+    name: "👨🏻‍💻",
   },
   "/blog": {
-    name: "blog",
+    name: "⌨️",
   },
   "/contact": {
-    name: "contact",
+    name: "📱",
   },
 };
 
@@ -72,7 +72,16 @@ const Sidebar = () => {
     <aside className="md:w-[150px] md:flex-shrink-0 -mx-4 md:mx-0 md:px-0 font-serif">
       <div className={"lg:sticky lg:top-20"}>
         <div className="ml-2 md:ml-[12px] mb-2 px-4 md:px-0 md:mb-8 space-y-10 flex flex-col md:flex-row items-start">
-          <Logo />
+          {/*<Logo />*/}
+          <motion.div
+            animate={{
+              scale: [1, 2, 2, 1, 1],
+              rotate: [0, 0, 270, 270, 0],
+              // borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+            }}
+          >
+            <h1 className="text-2xl font-serif">E</h1>
+          </motion.div>
         </div>
       </div>
 
