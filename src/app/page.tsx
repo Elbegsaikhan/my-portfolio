@@ -7,16 +7,8 @@ import {
   ViewsIcon,
 } from "#/components/icons";
 import { name, about, bio, avatar } from "#/lib/info";
-import { getStarCount } from "#/lib/metrics";
 
-export const revalidate = 60;
 export default async function Home() {
-  let starCount = 0;
-  try {
-    [starCount] = await Promise.all([getStarCount()]);
-  } catch (err) {
-    console.error(err);
-  }
   return (
     <section>
       <h1 className="font-bold text-3xl font-serif">{name}</h1>
@@ -51,7 +43,6 @@ export default async function Home() {
             className="flex items-center gap-2"
           >
             <GitHubIcon />
-            {`${starCount.toLocaleString()} stars on this repo`}
           </a>
           <Link href="/" className="flex items-center">
             <ViewsIcon />
