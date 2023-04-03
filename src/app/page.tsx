@@ -34,7 +34,7 @@ export default async function Home() {
           width={100}
           priority
         />
-        <div className="mt-8 md:mt-0 ml-0 md:ml-6 space-y-2 text-neutral-500 dark:text-neutral-400">
+        <div className="hidden mt-8 md:mt-0 ml-0 md:ml-6 space-y-2 text-neutral-500 dark:text-neutral-400">
           <a
             className="flex items-center gap-2"
             rel="noopener noreferer"

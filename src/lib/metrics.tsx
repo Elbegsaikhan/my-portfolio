@@ -12,6 +12,5 @@ export const getStarCount = cache(async () => {
     owner: "Elbegsaikhan",
     repo: "my-portfolio",
   });
-  console.log("REQ ", req);
   return req.data.stargazers_count;
 });

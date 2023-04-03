@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Sidebar from "#/components/sidebar";
 import React from "react";
+import Loading from "#/components/loading";
 
 export const metadata: Metadata = {
   title: {
@@ -14,11 +15,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Elbegsaikhan Amgalan",
     description: "Developer, writer, and creator.",
-    url: "https://leerob.io",
+    url: "https://elbegsaikhan.software",
     siteName: "Elbegsaikhan Amgalan",
     images: [
       {
-        url: "https://leerob.io/og.jpg",
+        url: "https://elbegsaikhan.software/avatar.jpg",
         width: 1920,
         height: 1080,
       },
@@ -44,10 +45,10 @@ export const metadata: Metadata = {
   icons: {
     shortcut: "/favicon.ico",
   },
-  verification: {
-    // google: "eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw",
-    // yandex: "14d2e73487fa6c71",
-  },
+  // verification: {
+  //   google: "eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw",
+  //   yandex: "14d2e73487fa6c71",
+  // },
 };
 
 const kaisei = localFont({
@@ -69,19 +70,15 @@ export default function RootLayout({
         kaisei.variable
       )}
     >
-      <body
-        className={
-          "antialiased max-w-4xl mb-40 flex flex-col md:flex-row mx-4 mt-8 md:mt-20 lg:mt-32 lg:mx-auto"
-        }
-      >
-        <Sidebar />
-        <main
-          className={
-            "flex-auto min-w-0 mt-6 md:mt-0 flex flex-col px-2 md:px-0"
-          }
-        >
-          {children}
-        </main>
+      <body>
+        <Loading>
+          <div className="antialiased max-w-4xl mb-40 flex flex-col md:flex-row mx-4 mt-8 md:mt-20 lg:mt-32 lg:mx-auto">
+            <Sidebar />
+            <main className="flex-auto min-w-0 mt-6 md:mt-0 flex flex-col px-2 md:px-0">
+              {children}
+            </main>
+          </div>
+        </Loading>
       </body>
     </html>
   );
