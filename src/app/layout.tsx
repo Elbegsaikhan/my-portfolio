@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     siteName: "Elbegsaikhan Amgalan",
     images: [
       {
-        url: "https://elbegsaikhan.software/avatar.jpg",
+        url: "https://elbegsaikhan.software/og.jpg",
         width: 1920,
         height: 1080,
       },
