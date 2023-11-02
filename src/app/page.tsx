@@ -23,7 +23,7 @@ export default async function Home() {
           src={avatar}
           className="rounded-full grayscale"
           placeholder="blur"
-          width={100}
+          width={150}
           priority
         />
         <div className="hidden mt-8 md:mt-0 ml-0 md:ml-6 space-y-2 text-neutral-500 dark:text-neutral-400">

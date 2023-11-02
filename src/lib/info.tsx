@@ -1,7 +1,8 @@
 import me from "../app/avatar.jpg";
+import me2 from "../app/avatar2.jpg";
 
 export const name = "Elbegsaikhan";
-export const avatar = me;
+export const avatar = me2;
 export const about = () => {
   return (
     <>Started coding for 2 years, still much things to learn in this field :)</>
