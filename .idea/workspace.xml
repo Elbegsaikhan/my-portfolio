@@ -48,7 +48,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
     "prettierjs.PrettierConfiguration.Package": "/Users/elbegsaikhanamgalan/.nvm/versions/node/v16.13.1/lib/node_modules/prettier",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "ts.external.directory.path": "/Users/elbegsaikhanamgalan/Developer/Next.js/elbegsaikhan_portfolio/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -109,7 +109,7 @@
       <workItem from="1681483326157" duration="2000" />
       <workItem from="1681998145812" duration="631000" />
       <workItem from="1682511624955" duration="8000" />
-      <workItem from="1698931076554" duration="731000" />
+      <workItem from="1698931076554" duration="1754000" />
     </task>
     <servers />
   </component>
